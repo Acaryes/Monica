@@ -11,7 +11,7 @@ export function Navbar({ isMenuOpen, setIsMenuOpen }: NavbarProps) {
     <nav className="fixed w-full bg-white/80 backdrop-blur-sm shadow-sm z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
-          <span className="text-2xl font-serif text-purple-800">Dra. María Santos</span>
+          <span className="text-2xl font-serif text-purple-800">Psic. Monica Nicte Ha</span>
           
           <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="md:hidden">
             {isMenuOpen ? <X className="h-6 w-6 text-purple-800" /> : <Menu className="h-6 w-6 text-purple-800" />}

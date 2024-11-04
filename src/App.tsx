@@ -30,7 +30,7 @@ function App() {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <img 
-              src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80"
+              src="https://scontent.fmxl1-1.fna.fbcdn.net/v/t39.30808-6/441403471_891003739709111_8601551531553612574_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=J8tqgE15MfQQ7kNvgGhfaiU&_nc_zt=23&_nc_ht=scontent.fmxl1-1.fna&_nc_gid=A64_yQHNSdExtHgTvmlwe7M&oh=00_AYBdWaJ2jA8ulhhH3rGaL1MKhFu3-Xs0IVTNPfL7n4K-8g&oe=672E4BBB"
               alt="Psicóloga profesional"
               className="rounded-lg shadow-lg"
             />
@@ -42,10 +42,12 @@ function App() {
               <p className="text-purple-800 mb-4">
                 Mi enfoque terapéutico se basa en la empatía, el respeto y la comprensión, adaptándome a las necesidades únicas de cada persona.
               </p>
-              <div className="flex items-center text-purple-700 mt-6">
-                <Heart className="w-5 h-5 mr-2" />
-                <span>Comprometida con tu bienestar emocional</span>
-              </div>
+              <ul className="space-y-4 text-purple-700">
+              <li>✓ Licenciada en Psicología por la UABC</li>
+              <li>✓ Maestría en Terapia Cognitivo-Conductual</li>
+              <li>✓ Especialización en Terapia de Pareja</li>
+              <li>✓ Miembro de la Asociación Mexicana de Psicología</li>
+            </ul>
             </div>
           </div>
         </div>
@@ -55,13 +57,18 @@ function App() {
       <section id="services" className="py-20 px-4 bg-purple-50">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-serif text-purple-900 mb-12 text-center">Servicios</h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
                 icon: <Heart className="w-8 h-8 text-purple-600" />,
                 title: "Terapia Individual",
                 description: "Sesiones personalizadas para abordar tus necesidades específicas y alcanzar tus objetivos de bienestar."
               },
+              {
+               icon: <Heart className="w-8 h-8 text-purple-600" />,
+               title: "Terapia de Pareja",
+               description: "Mejora la comunicación y fortalece tu relación"
+             },
               {
                 icon: <Sparkles className="w-8 h-8 text-purple-600" />,
                 title: "Manejo de Ansiedad",
@@ -84,50 +91,61 @@ function App() {
       </section>
 
       {/* Pricing Section */}
-      <section id="pricing" className="py-20 px-4">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-serif text-purple-900 mb-12 text-center">Costos</h2>
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div className="bg-white p-8 rounded-lg shadow-md border border-purple-100">
-              <h3 className="text-xl font-semibold text-purple-900 mb-4">Sesión Presencial</h3>
-              <p className="text-3xl font-bold text-purple-600 mb-4">$800 MXN</p>
-              <ul className="space-y-3 mb-6">
-                <li className="flex items-center text-purple-700">
-                  <Clock className="w-5 h-5 mr-2" />
-                  50 minutos de duración
-                </li>
-                <li className="flex items-center text-purple-700">
-                  <Sparkles className="w-5 h-5 mr-2" />
-                  Primera consulta de evaluación
-                </li>
-              </ul>
+      <section id="pricing" className="py-20 px-4 bg-white">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-3xl font-serif text-purple-900 mb-12 text-center">Costos</h2>
+        <div className="grid md:grid-cols-3 gap-8">
+          <div className="bg-purple-50 rounded-lg shadow-md p-8 text-center">
+            <h3 className="text-xl font-serif text-purple-800 mb-4">Primera Consulta</h3>
+            <p className="text-3xl font-bold text-purple-900 mb-4">$800 MXN</p>
+            <p className="text-purple-700 mb-6">Sesión de evaluación inicial de 60 minutos</p>
+            <a
+              href="#appointment"
+              className="inline-block bg-purple-600 text-white px-6 py-2 rounded-full hover:bg-purple-700 transition-colors"
+            >
+              Agendar cita
+            </a>
+          </div>
+          
+          <div className="bg-purple-100 rounded-lg shadow-md p-8 text-center transform scale-105">
+            <div className="bg-purple-600 text-white py-1 px-4 rounded-full text-sm inline-block mb-4">
+              Más popular
             </div>
-            <div className="bg-white p-8 rounded-lg shadow-md border border-purple-100">
-              <h3 className="text-xl font-semibold text-purple-900 mb-4">Sesión Online</h3>
-              <p className="text-3xl font-bold text-purple-600 mb-4">$700 MXN</p>
-              <ul className="space-y-3 mb-6">
-                <li className="flex items-center text-purple-700">
-                  <Clock className="w-5 h-5 mr-2" />
-                  50 minutos de duración
-                </li>
-                <li className="flex items-center text-purple-700">
-                  <MessageCircle className="w-5 h-5 mr-2" />
-                  Videollamada segura
-                </li>
-              </ul>
-            </div>
+            <h3 className="text-xl font-serif text-purple-800 mb-4">Terapia Individual</h3>
+            <p className="text-3xl font-bold text-purple-900 mb-4">$700 MXN</p>
+            <p className="text-purple-700 mb-6">Sesión regular de 50 minutos</p>
+            <a
+              href="#appointment"
+              className="inline-block bg-purple-600 text-white px-6 py-2 rounded-full hover:bg-purple-700 transition-colors"
+            >
+              Agendar cita
+            </a>
+          </div>
+
+          <div className="bg-purple-50 rounded-lg shadow-md p-8 text-center">
+            <h3 className="text-xl font-serif text-purple-800 mb-4">Terapia de Pareja</h3>
+            <p className="text-3xl font-bold text-purple-900 mb-4">$900 MXN</p>
+            <p className="text-purple-700 mb-6">Sesión de 60 minutos para parejas</p>
+            <a
+              href="#appointment"
+              className="inline-block bg-purple-600 text-white px-6 py-2 rounded-full hover:bg-purple-700 transition-colors"
+            >
+              Agendar cita
+            </a>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
       {/* Booking Section */}
       <BookingSection />
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 px-4 bg-purple-50">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-serif text-purple-900 mb-12 text-center">Contacto</h2>
-          <div className="max-w-xl mx-auto bg-white rounded-lg shadow-md p-8">
+      <section id="contact" className="py-20 px-4 bg-white">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-3xl font-serif text-purple-900 mb-12 text-center">Contacto</h2>
+        <div className="grid md:grid-cols-2 gap-8">
+          <div className="bg-purple-50 rounded-lg shadow-md p-8">
             <form className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-purple-700 mb-2">Nombre</label>
@@ -161,13 +179,33 @@ function App() {
               </button>
             </form>
           </div>
+          <div className="bg-purple-50 rounded-lg shadow-md p-8">
+            <div className="mb-6">
+              <h3 className="text-xl font-semibold text-purple-900 mb-4">Ubicación</h3>
+              <p className="text-purple-700 mb-2">Av Reforma 973, Segunda</p>
+              <p className="text-purple-700 mb-4">21100 Mexicali, B.C.</p>
+            </div>
+            <div className="w-full h-[450px] rounded-lg overflow-hidden">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3358.8183737415566!2d-115.48126362423065!3d32.66427708973887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d77aa8cfbddfc9%3A0xc1e4925e28adca03!2sAv%20Reforma%20973%2C%20Segunda%2C%2021100%20Mexicali%2C%20B.C.!5e0!3m2!1ses-419!2smx!4v1730712859736!5m2!1ses-419!2smx"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="rounded-lg"
+              ></iframe>
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
       {/* Footer */}
       <footer className="bg-purple-900 text-purple-100 py-8 px-4">
         <div className="max-w-7xl mx-auto text-center">
-          <p className="mb-2">Dra. María Santos - Psicóloga Clínica</p>
+          <p className="mb-2">Psic. Monica Nicte Ha</p>
           <p className="text-purple-300">Céd. Prof. 12345678</p>
         </div>
       </footer>
