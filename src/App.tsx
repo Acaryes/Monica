@@ -7,11 +7,11 @@ function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-purple-50">
+    <div className="min-h-screen bg-gray-200">
       <Navbar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 bg-gradient-to-b from-purple-100 to-purple-50">
+      <section className="pt-32 pb-20 px-4 bg-gray-200">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-serif text-purple-900 mb-6">
             Encuentra tu camino hacia el bienestar emocional
@@ -30,7 +30,7 @@ function App() {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <img 
-              src="https://scontent.fmxl1-1.fna.fbcdn.net/v/t39.30808-6/441403471_891003739709111_8601551531553612574_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=J8tqgE15MfQQ7kNvgGhfaiU&_nc_zt=23&_nc_ht=scontent.fmxl1-1.fna&_nc_gid=A64_yQHNSdExtHgTvmlwe7M&oh=00_AYBdWaJ2jA8ulhhH3rGaL1MKhFu3-Xs0IVTNPfL7n4K-8g&oe=672E4BBB"
+              src="https://scontent.fmxl1-1.fna.fbcdn.net/v/t39.30808-6/441403471_891003739709111_8601551531553612574_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=3SHlBkSnmt0Q7kNvgFaWs2q&_nc_zt=23&_nc_ht=scontent.fmxl1-1.fna&_nc_gid=A5m9Dcy-SI5oYjvvNlPFEGu&oh=00_AYC4sWc6FrlPoaa6AfX0KWp9X08g9wVRGhG3O3FBl1YuDQ&oe=6737863B"
               alt="Psicóloga profesional"
               className="rounded-lg shadow-lg"
             />
@@ -54,7 +54,7 @@ function App() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-20 px-4 bg-purple-50">
+      <section id="services" className="py-20 px-4 bg-gray-200">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-serif text-purple-900 mb-12 text-center">Servicios</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -95,7 +95,7 @@ function App() {
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl font-serif text-purple-900 mb-12 text-center">Costos</h2>
         <div className="grid md:grid-cols-3 gap-8">
-          <div className="bg-purple-50 rounded-lg shadow-md p-8 text-center">
+          <div className="bg-gray-200 rounded-lg shadow-md p-8 text-center">
             <h3 className="text-xl font-serif text-purple-800 mb-4">Primera Consulta</h3>
             <p className="text-3xl font-bold text-purple-900 mb-4">$800 MXN</p>
             <p className="text-purple-700 mb-6">Sesión de evaluación inicial de 60 minutos</p>
@@ -107,7 +107,7 @@ function App() {
             </a>
           </div>
           
-          <div className="bg-purple-100 rounded-lg shadow-md p-8 text-center transform scale-105">
+          <div className="bg-gray-200 rounded-lg shadow-md p-8 text-center transform scale-105">
             <div className="bg-purple-600 text-white py-1 px-4 rounded-full text-sm inline-block mb-4">
               Más popular
             </div>
@@ -122,7 +122,7 @@ function App() {
             </a>
           </div>
 
-          <div className="bg-purple-50 rounded-lg shadow-md p-8 text-center">
+          <div className="bg-gray-200 rounded-lg shadow-md p-8 text-center">
             <h3 className="text-xl font-serif text-purple-800 mb-4">Terapia de Pareja</h3>
             <p className="text-3xl font-bold text-purple-900 mb-4">$900 MXN</p>
             <p className="text-purple-700 mb-6">Sesión de 60 minutos para parejas</p>
@@ -145,7 +145,7 @@ function App() {
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl font-serif text-purple-900 mb-12 text-center">Contacto</h2>
         <div className="grid md:grid-cols-2 gap-8">
-          <div className="bg-purple-50 rounded-lg shadow-md p-8">
+          <div className="bg-gray-200 rounded-lg shadow-md p-8">
             <form className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-purple-700 mb-2">Nombre</label>
@@ -179,7 +179,7 @@ function App() {
               </button>
             </form>
           </div>
-          <div className="bg-purple-50 rounded-lg shadow-md p-8">
+          <div className="bg-gray-200 rounded-lg shadow-md p-8">
             <div className="mb-6">
               <h3 className="text-xl font-semibold text-purple-900 mb-4">Ubicación</h3>
               <p className="text-purple-700 mb-2">Av Reforma 973, Segunda</p>
